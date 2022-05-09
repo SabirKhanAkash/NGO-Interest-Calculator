@@ -1,17 +1,19 @@
 <!DOCTYPE html>
     <head>
-        <title>Web App – Simple Interest Calculator</title>
+        <title>Simple-NGO Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
         <div class="maindiv">
-            <h1>Simple Interest Calculator</h1><br><br>
+            <h1>Simple-NGO Interest Calculator</h1><br><br>
 
-            Amount   <input type="number"  id="principal">  <br><br>
+            Amount   <input class="form-control" type="number" placeholder="(in BDT)" id="principal">  <br><br>
             Rate <input onchange="updateRate()" type="range" step="0.25" id="rate" min=1 max=20 value=10.25> <span id="rate_val">10.25 %</span> <br><br>
             No. of Years 
-            <select id="years">
+            <select class="form-control" id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -22,14 +24,14 @@
                 <option value="8">8</option>  
                 <option value="9">9</option>
                 <option value="10">10</option>
-            </select><br><br>
+            </select><br>
             
 
-            <button onclick="compute()">Compute Interest</button><br><br><br><br>
-            Interest : <br><span id="result"> 
-            </span><br><br>
+            <button class="btn btn-primary" style="border-radius: 6px;" onclick="compute()">Compute Interest</button><br><br><br><br>
+            Interest : <br><span class="res" id="result"> 
+            </span><br>
             
-            <footer>&#169; This Calculator is developed by Shabir Khan Akash.</footer>
+            <footer class="foot">This Calculator is developed by <a href="https://github.com/SabirKhanAkash" target="_blank">Sabir Khan Akash </a>&#169; 2022</footer>
         </div>
     </body>
 </html>
