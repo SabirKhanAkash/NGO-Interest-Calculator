@@ -11,7 +11,7 @@ function compute()
         alert('Enter a positive number please!');
     else
     {
-        var output = "If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>";
+        var output = "If you deposit "+principal+" BDT,\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+" BDT,\<br\>in the year "+year+"\<br\>";
         document.getElementById("result").innerHTML=output;
     }
     
